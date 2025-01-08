@@ -70,7 +70,8 @@ DATABASES = {
 }
 
 database_url = os.environ.get("DATABASE_URL")
-DATABASES['default'] = dj_database_url.parse(database_url)
+DATABASES['default'] = dj_database_url.parse("postgresql://travel_planner_c4bw_user:40jXbtl43ATMjlLOSGXmh74fmjeAusNr@dpg-ctv3nql6l47c739rtmi0-a.oregon-postgres.render.com/travel_planner_c4bw")
+
 
 AUTH_PASSWORD_VALIDATORS = [
     {
